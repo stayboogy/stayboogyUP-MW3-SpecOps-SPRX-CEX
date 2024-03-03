@@ -1,0 +1,15 @@
+in Self Resigner:
+
+#9--OFW DEX Decrypt EBOOT.BIN (FSELF) Only
+
+with the actual EBOOT.BIN from USDIR
+
+do not use the default_mp.self
+
+that method is a failure
+
+then, match the decrypted EBOOT.BIN to your sprx file name using SPRX ELF Builder
+
+then, in Self Resigner,
+
+#10--OFW DEX Resign to NON-DRM EBOOT
