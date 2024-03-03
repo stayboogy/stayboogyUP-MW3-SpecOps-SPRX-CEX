@@ -1,0 +1,20 @@
+﻿Build started 3/3/2024 2:48:53 PM.
+     1>Project "C:\Users\M\Desktop\sprx-new\stayboogyUP.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "PS3_Debug\stayboogyUP.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         prx.cpp
+         ps3ppusnc.exe -D_DEBUG -D__CELL_ASSERT__ -D__PS3__ -DLIBNAME=cellPrx_stayboogyUP -DSTUBNAME=cellPrx_stayboogyUP_stub -o PS3_Debug\prx.o -c -Xmserrors -Xdepmode=1 -MD -I. -IC:/usr/local/cell\target\ppu\include -IC:/usr/local/cell\target\common\include -I"C:/usr/local/cell\host-win32\sn\ppu\include" -g -O0 -Xc-=rtti prx.cpp
+       Link:
+         C:\usr\local\cell\host-win32\sn\bin\ps3ppuld32.exe -oformat=fsprx -o "C:\Users\M\Desktop\sprx-new\PS3_Debug\stayboogyUP.sprx" -L"C:/usr/local/cell\host-win32\lib\prx\ldscripts" --start-group PS3_Debug\prx.o C:/usr/local/cell\target\ppu\lib\libc.a C:/usr/local/cell\target\ppu\lib\libc_stub.a "C:\Program Files (x86)\SN Systems\PS3\ppu\lib\sn\libsn.a" C:/usr/local/cell\target\ppu\lib\libm.a C:/usr/local/cell\target\ppu\lib\libio_stub.a C:/usr/local/cell\target\ppu\lib\libsysutil_stub.a C:/usr/local/cell\target\ppu\lib\libsysmodule_stub.a C:/usr/local/cell\target\ppu\lib\libsyscall.a C:/usr/local/cell\target\ppu\lib\libgcm_sys_stub.a "C:/usr/local/cell\host-win32\spu\lib\gcc\spu-lv2\4.1.1\libgcc.a" libsn.a libm.a libio_stub.a libfs_stub.a --end-group
+         stayboogyUP.vcxproj -> C:\Users\M\Desktop\sprx-new\PS3_Debug\stayboogyUP.sprx
+         Moving Stub Library cellPrx_stayboogyUP_stub.a -> C:\Users\M\Desktop\sprx-new\PS3_Debug\
+         Moving file from "cellPrx_stayboogyUP_stub.a" to "C:\Users\M\Desktop\sprx-new\PS3_Debug\cellPrx_stayboogyUP_stub.a".
+       FinalizeBuildStatus:
+         Deleting file "PS3_Debug\stayboogyUP.unsuccessfulbuild".
+         Touching "PS3_Debug\stayboogyUP.lastbuildstate".
+     1>Done Building Project "C:\Users\M\Desktop\sprx-new\stayboogyUP.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.77
