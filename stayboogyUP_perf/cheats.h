@@ -30,6 +30,7 @@ void Godly()
 	// unknown reason why
 	char godly[] = "81";
 	PS3::WriteString(0x012272ea, godly);
+	sleep(1000);
 }
 
 // Player Can Be Damaged - Vision Normal
@@ -42,11 +43,6 @@ void Manly()
 	char manly[] = "00";
 	PS3::WriteString(0x012272ea, manly);
 	sleep(1000);
-
-	// bytes > string for returning to normal damage
-	// unknown reason why
-	//char manly[] = { 0x00 };
-	//PS3::WriteBytes(0x012272ea, manly, sizeof(manly));
 }
 
 // Ammo Full for all Weapons and currently held Equipment
