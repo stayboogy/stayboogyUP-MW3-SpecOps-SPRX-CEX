@@ -39,20 +39,32 @@ void stayboogy(uint64_t arg)
 
 	for (;;)
 	{
-			sleep(1000);
-			UAV();
-			Perks();
-			Loaded();
+		isMan =!isGod;
+		isGod =!isMan;
 
-			if  (GetKey()==(PAD_LEFT))
+		sleep(1000);
+
+		UAV();
+		Perks();
+		Loaded();
+
+		if  (GetKey()==(PAD_LEFT))
+		{
+			if (isMan == false);
 			{
 				Manly();
+				isMan = true;
 			}
+		}
 
-			if (GetKey()==(PAD_RIGHT))
+		if (GetKey()==(PAD_RIGHT))
+		{
+			if (isGod == false);
 			{
 				Godly();
+				isGod = true;
 			}
+		}
 	}
 }
 

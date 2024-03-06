@@ -3,8 +3,13 @@
 //
 // cheats.h begin
 //
+
 // Advanced UAV
 //
+bool isMan;
+
+bool isGod;
+
 void UAV()
 {
 	char uav[] = { 0x10 };
@@ -45,7 +50,7 @@ void Manly()
 	sleep(1000);
 }
 
-// Ammo Full for all Weapons and currently held Equipment
+// Ammo Full for all currently held Weapons Equipment
 // Secondary Weapon Rapid Fire No Reload
 // Primary Weapon Extended Clips
 //
@@ -68,10 +73,12 @@ void Loaded()
 	PS3::WriteBytes(0x01232789, loaded, sizeof(loaded));
 	PS3::WriteBytes(0x012327a1, loaded, sizeof(loaded));
 	PS3::WriteBytes(0x012327ad, loaded, sizeof(loaded));
-};
+}
+
 //
 // cheats.h end
 //
+
 
 //
 //UNUSED CODE FOR REFERENCE
