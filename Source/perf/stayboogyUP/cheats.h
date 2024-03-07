@@ -4,12 +4,15 @@
 // cheats.h begin
 //
 
-// Advanced UAV
-//
+// stayboogy build???
+bool sBuild;
+
 bool isMan;
 
 bool isGod;
 
+// Advanced UAV
+//
 void UAV()
 {
 	char uav[] = { 0x10 };

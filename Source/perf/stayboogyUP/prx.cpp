@@ -32,43 +32,62 @@
 #include "ps3.h"
 #include "buttons.h"
 #include "cheats.h"
+#include "notify.h"
 
 void stayboogy(uint64_t arg)
 {
 	sleep(3000);
 
+	sBuild = false;
+
 	for (;;)
 	{
-		isMan =!isGod;
-		isGod =!isMan;
+		// Godly | Manly logic
+		isMan = !isGod;
+		isGod = !isMan;
 
 		sleep(1000);
 
+		// the main cheat functions
 		UAV();
 		Perks();
 		Loaded();
 
+		// if press DPad Left
 		if  (GetKey()==(PAD_LEFT))
 		{
 			if (isMan == false);
 			{
 				Manly();
+
+				// redundant but reactivate on player state change
+				Perks(); 
+				Loaded();
+
+				// for more reliable player state change
 				isMan = true;
 			}
 		}
 
+		// if press DPad Right
 		if (GetKey()==(PAD_RIGHT))
 		{
 			if (isGod == false);
 			{
 				Godly();
+
+				// redundant but reactivate on player state change
+				Perks();
+				Loaded();
+
+				// for more reliable player state change
 				isGod = true;
 			}
 		}
 	}
 }
 
-//stayboogy is the module name
+//stayboogyUP is the module name
 sys_ppu_thread_t stayboogyUP;
 
 SYS_MODULE_INFO( stayboogyUP, 0, 1, 1);
@@ -86,7 +105,14 @@ extern "C" int _stayboogyUP_export_function(void)
 
 extern "C" int _stayboogyUP_prx_entry(void)
 {
+	// "stayboogy" is the main function, 0x4AA is the stack size, 0x6000 is the priority, "stayboogy" is the threadname, stayboogyUP is the sys_ppu_thread_t
 	create_thread(stayboogy, 0x4AA, 0x6000, "stayboogy", stayboogyUP);
+	console_write("\n\nstayboogyUP.\n\n");
+	if (sBuild == !true);
+	{
+	Notify::msgdialog_mode = Notify::MODE_STRING_OK;
+	Notify::Show("stayboogyUP Solo Survival + Chaos Mods!\n\n           stayboogy@codeberg.org\n");
+	}
     return SYS_PRX_RESIDENT;
 }
 

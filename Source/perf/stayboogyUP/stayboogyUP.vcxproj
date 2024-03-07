@@ -56,6 +56,7 @@
   <ItemGroup>
     <ClInclude Include="buttons.h" />
     <ClInclude Include="cheats.h" />
+    <ClInclude Include="notify.h" />
     <ClInclude Include="ps3.h" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
