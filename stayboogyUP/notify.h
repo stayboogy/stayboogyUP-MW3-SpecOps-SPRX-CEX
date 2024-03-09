@@ -5,10 +5,10 @@
      
 namespace Notify
 {
-        bool Finished = false;
-        bool YESNO = false;
+	bool Finished = false;
+	bool YESNO = false;
      
-enum {
+	enum {
         MODE_IDLE = 0,
         MODE_ERRORCODE_DIALOG_TEST,
         MODE_STRING_OK,
@@ -30,107 +30,92 @@ static void cb_dialogText1( int button_type, void *userdata )
         switch ( button_type ) {
      
         case CELL_MSGDIALOG_BUTTON_OK:
-                msgdialog_mode = MODE_EXIT;
-                break;
+			msgdialog_mode = MODE_EXIT;
+			break;
         case CELL_MSGDIALOG_BUTTON_ESCAPE:
-                msgdialog_mode = MODE_EXIT;
-                break;
+			msgdialog_mode = MODE_EXIT;
+			break;
      
         default:
-                msgdialog_mode = MODE_EXIT;
-                break;
+			msgdialog_mode = MODE_EXIT;
+			break;
         }
 }
+
 static void cb_dialogText2( int button_type, void *userdata )
 {
         switch ( button_type ) {
      
         case CELL_MSGDIALOG_BUTTON_YES:
-                YESNO = true;
-                msgdialog_mode = MODE_EXIT;
-                break;
+			YESNO = true;
+			msgdialog_mode = MODE_EXIT;
+            break;
      
         case CELL_MSGDIALOG_BUTTON_NO:
-                msgdialog_mode = MODE_EXIT;
-                break;
+			msgdialog_mode = MODE_EXIT;
+            break;
      
         case CELL_MSGDIALOG_BUTTON_ESCAPE:
-                msgdialog_mode = MODE_EXIT;
-                break;
+			msgdialog_mode = MODE_EXIT;
+			break;
      
         default:
-                break;
+			break;
         }
 }
-     
-     
+       
 void ShowYESNO(char* msg)
 {
-            unsigned int type =   CELL_MSGDIALOG_TYPE_SE_TYPE_ERROR                      
-                                                    | CELL_MSGDIALOG_TYPE_BG_INVISIBLE                  
-                                                | CELL_MSGDIALOG_TYPE_BUTTON_TYPE_YESNO        
-                                            | CELL_MSGDIALOG_TYPE_DISABLE_CANCEL_ON    
-                                                | CELL_MSGDIALOG_TYPE_DEFAULT_CURSOR_YES;      
+	unsigned int type =   CELL_MSGDIALOG_TYPE_SE_TYPE_ERROR  | CELL_MSGDIALOG_TYPE_BG_INVISIBLE | CELL_MSGDIALOG_TYPE_BUTTON_TYPE_YESNO  | CELL_MSGDIALOG_TYPE_DISABLE_CANCEL_ON  | CELL_MSGDIALOG_TYPE_DEFAULT_CURSOR_YES;      
      
-     
-        switch ( msgdialog_mode )
+		switch ( msgdialog_mode )
         {
-        case MODE_IDLE:
-                break;
+			case MODE_IDLE:
+				break;
      
-        case MODE_STRING_YESNO:
-        cellMsgDialogOpen2(type, msg, cb_dialogText2, NULL, NULL);
-            msgdialog_mode = MODE_RUNNING;
-            break;
+			case MODE_STRING_YESNO:
+				cellMsgDialogOpen2(type, msg, cb_dialogText2, NULL, NULL);
+				msgdialog_mode = MODE_RUNNING;
+				break;
      
-        case MODE_EXIT:
-            cellMsgDialogClose((float)1);
-            break;
+			case MODE_EXIT:
+				cellMsgDialogClose((float)1);
+				break;
      
             default:
                 break;
      
         }
-     
-     
 }
+
 void Show(char* msg)
 {
-           
-            unsigned int type =   CELL_MSGDIALOG_TYPE_SE_TYPE_ERROR                      
-                                                    | CELL_MSGDIALOG_TYPE_BG_INVISIBLE                  
-                                                | CELL_MSGDIALOG_TYPE_BUTTON_TYPE_OK            
-                                            | CELL_MSGDIALOG_TYPE_DISABLE_CANCEL_ON    
-                                                | CELL_MSGDIALOG_TYPE_DEFAULT_CURSOR_OK;
+	unsigned int type =   CELL_MSGDIALOG_TYPE_SE_TYPE_ERROR  | CELL_MSGDIALOG_TYPE_BG_INVISIBLE  | CELL_MSGDIALOG_TYPE_BUTTON_TYPE_OK | CELL_MSGDIALOG_TYPE_DISABLE_CANCEL_ON  | CELL_MSGDIALOG_TYPE_DEFAULT_CURSOR_OK;
      
-     
-        switch ( msgdialog_mode )
-        {
-        case MODE_IDLE:
-                break;
-     
-        case MODE_STRING_OK:
-        cellMsgDialogOpen2(type, msg, cb_dialogText1, NULL, NULL);
-            msgdialog_mode = MODE_EXIT;
+     switch ( msgdialog_mode )
+     {
+		case MODE_IDLE:
+			break;
+		case MODE_STRING_OK:
+			cellMsgDialogOpen2(type, msg, cb_dialogText1, NULL, NULL);
+			msgdialog_mode = MODE_EXIT;
             break;
      
         case MODE_EXIT:
-            cellMsgDialogClose((float)5);
+			cellMsgDialogClose((float)5);
+			break;
+     
+        default:
             break;
+      }
      
-            default:
-                break;
-     
-        }
-     
-        while(Notify::msgdialog_mode != Notify::MODE_EXIT){}  //wait for the dialog to end :P
+      while(Notify::msgdialog_mode != Notify::MODE_EXIT){}  //wait for the dialog to end :P
 }
      
 void End()
 {
-            Finished = false;
-            YESNO = false;
+	Finished = false;
+    YESNO = false;
 }
-     
-     
+      
 }
