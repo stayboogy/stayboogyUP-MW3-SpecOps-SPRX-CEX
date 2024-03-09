@@ -33,9 +33,11 @@ Nothing to do; cheats are activated on a revovling basis and do not crash the ga
 
 1)  Super Advanced UAV
 2)  All Perks At Once
-3)  -Ammo Full for all currently held Weapons & Equipment
-    -Secondary Weapon Rapid Fire No Reload - any weapon in secondary position - even RPG
-    -Primary Weapon Extended Clips But Reload
+3)  Ammo Full for all currently held Weapons & Equipment
+
+    a) Secondary Weapon Rapid Fire No Reload - any weapon in secondary position - even RPG
+    
+    b) Primary Weapon Extended Clips But Reload
 	
 4)  DPad Right - God Mode + Sharpened Vision - No Damage Ever
 5)  DPad Left - Normal Damage Taken + Sharpened Vision - Can Be Killed Again
