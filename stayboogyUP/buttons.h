@@ -1,4 +1,10 @@
 #include <cell/pad.h>
+
+// use actual hardcoded buttons for the PS3
+// why use game memory addresses for something the PS3 has natively?
+// why reinvent the wheel?
+// don't be a dumb coder
+
 #define PAD_LEFT (1 << 7)
 #define PAD_DOWN (1 << 6)
 #define PAD_RIGHT (1 << 5)
@@ -18,6 +24,7 @@
 
 CellPadData PadData;
 
+// simplest button press data determination possible
 uint32_t GetKey(void)
 {
 	uint32_t temp;

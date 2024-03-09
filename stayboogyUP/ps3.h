@@ -1,6 +1,9 @@
 //ps3.h
 
 #define TOC                         ( 0x0072DCE8 )
+
+// stayboogy build???
+bool sBuild;
  
 struct opd_s
 {
