@@ -1,8 +1,5 @@
-# stayboogy_stayboogy-SpecOPs-MW3-SPRX-CEX
+# stayboogyUP PS3 MW3 Solo Survival + Chaos SPRX Mods for On/Offline Solo Play on CEX Retail Consoles
 
-## stayboogyUP PS3 MW3 Solo Survival + Chaos
-
-## SPRX Mods
 
 ### Video Demonstration:
 
@@ -14,23 +11,45 @@ https://rumble.com/v4h44mr-stayboogyup-ps3-mw3-blus-sprx-cex-spec-ops-chaos-best
 https://codeberg.org/stayboogy/stayboogy_stayboogy-SpecOPs-MW3-SPRX-CEX/raw/branch/main/Releases/perf/stayboogyUP-sprx.v1.24.03.08.zip
 
 
+## Build it Yourself
+
+```javascript
+a) install Visual Studio 2010
+b) install ProDGForPlayStation3v400.1.0.exe
+c) install SN-DBSv2.2.1.13.exe
+d) install TunerForPlaystation3v400.1.0.exe
+e) install VSI2010forPS3v2.0.1.5.exe
+
+See Here for Archive of files: https://codeberg.org/stayboogy/stayboogy_PS3_SDK_Personal
+```
+
+
+## How to Use:
+
+
 ### Requirements: 
 
-CEX CFW Cobra Mode On (Use EVILNAT, all others are garbage), FTP or File Manager
+```javascript
+a) jailbroken PS3
 
+b) CEX CFW Cobra Mode On (Use EVILNAT, all others are garbage) 
+
+c) FTP Server or File Manager
+```
 
 ### Install:  
 
-Extract the zip, copy the EBOOT.BIN to the game's USDIR folder, copy the stayboogyUP.sprx to /hdd0/tmp folder
+```javascript
+a) extract the zip
 
+b) copy "stayboogyUP.sprx" to "hdd0\tmp\stayboogyUP.sprx"
 
-### How to Use:  
+c) copy "EBOOT.BIN" to "hdd0\game\BLUS30838\USRDIR\EBOOT.BIN"
+```
 
-Nothing to do; cheats are activated on a revovling basis and do not crash the game or give you unintended consequences
+### Cheats Always On:
 
-
-### Cheats [On Infinite Revolving Loop]:
-
+```javascript
 1)  Super Advanced UAV
 2)  All Perks At Once
 3)  Ammo Full for all currently held Weapons & Equipment
@@ -40,4 +59,14 @@ Nothing to do; cheats are activated on a revovling basis and do not crash the ga
     b) Primary Weapon Extended Clips But Reload
 	
 4)  DPad Right - God Mode + Sharpened Vision - No Damage Ever
+
+    - Hold for a few seconds, tap for few seconds, keep trying if not working (see video for help)
+    
+    - Absolutely Works
+    
 5)  DPad Left - Normal Damage Taken + Sharpened Vision - Can Be Killed Again
+
+    - Hold for a few seconds, tap for few seconds, keep trying if not working (see video for help)
+    
+    - Absolutely Works
+ ```
