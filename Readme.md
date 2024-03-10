@@ -21,6 +21,7 @@ b) install ProDGForPlayStation3v400.1.0.exe
 c) install SN-DBSv2.2.1.13.exe
 d) install TunerForPlaystation3v400.1.0.exe
 e) install VSI2010forPS3v2.0.1.5.exe
+f) copy "usr" to "C:\usr" so it is like "C:\usr\local\cell"
 
 ```
 
