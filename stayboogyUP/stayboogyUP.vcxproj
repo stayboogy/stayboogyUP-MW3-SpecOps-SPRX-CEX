@@ -32,7 +32,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;__CELL_ASSERT__;%(PreprocessorDefinitions);</PreprocessorDefinitions>
@@ -42,6 +45,13 @@
     <Link>
       <AdditionalDependencies>$(SCE_PS3_ROOT)\target\ppu\lib\libc.a;$(SCE_PS3_ROOT)\target\ppu\lib\libc_stub.a;$(SN_PS3_PATH)\ppu\lib\sn\libsn.a;$(SCE_PS3_ROOT)\target\ppu\lib\libm.a;$(SCE_PS3_ROOT)\target\ppu\lib\libio_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsysutil_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsysmodule_stub.a;$(SCE_PS3_ROOT)\target\ppu\lib\libsyscall.a;$(SCE_PS3_ROOT)\target\ppu\lib\libgcm_sys_stub.a;$(SCE_PS3_ROOT)\host-win32\spu\lib\gcc\spu-lv2\4.1.1\libgcc.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>start $(ProjectDir)mkRelease.cmd</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
     <ClCompile>
