@@ -16,7 +16,7 @@ https://codeberg.org/stayboogy/stayboogy_stayboogy-SpecOPs-MW3-SPRX-CEX/raw/bran
 See Here for Archive of files: https://codeberg.org/stayboogy/stayboogy_PS3_SDK_Personal
 
 ```javascript
-a) install Visual Studio 2010
+a) install Visual Studio 2010 - https://archive.org/download/en_vs_2010_ult/SW_DVD9_VS_Ultimate_2010_English_Core_MLF_X16-76630.ISO
 b) install ProDGForPlayStation3v400.1.0.exe
 c) install SN-DBSv2.2.1.13.exe
 d) install TunerForPlaystation3v400.1.0.exe
