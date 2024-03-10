@@ -13,6 +13,8 @@ https://codeberg.org/stayboogy/stayboogy_stayboogy-SpecOPs-MW3-SPRX-CEX/raw/bran
 
 ## Build it Yourself
 
+See Here for Archive of files: https://codeberg.org/stayboogy/stayboogy_PS3_SDK_Personal
+
 ```javascript
 a) install Visual Studio 2010
 b) install ProDGForPlayStation3v400.1.0.exe
@@ -20,7 +22,6 @@ c) install SN-DBSv2.2.1.13.exe
 d) install TunerForPlaystation3v400.1.0.exe
 e) install VSI2010forPS3v2.0.1.5.exe
 
-See Here for Archive of files: https://codeberg.org/stayboogy/stayboogy_PS3_SDK_Personal
 ```
 
 
@@ -51,12 +52,14 @@ c) copy "EBOOT.BIN" to "hdd0\game\BLUS30838\USRDIR\EBOOT.BIN"
 
 ```javascript
 1)  Super Advanced UAV
+
 2)  All Perks At Once
+
 3)  Ammo Full for all currently held Weapons & Equipment
 
-    a) Secondary Weapon Rapid Fire No Reload - any weapon in secondary position - even RPG
+    - Secondary Weapon Rapid Fire No Reload - any weapon in secondary position - even RPG
     
-    b) Primary Weapon Extended Clips But Reload
+    - Primary Weapon Extended Clips But Reload
 	
 4)  DPad Right - God Mode + Sharpened Vision - No Damage Ever
 
