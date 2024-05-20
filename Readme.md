@@ -8,7 +8,7 @@ https://rumble.com/v4h44mr-stayboogyup-ps3-mw3-blus-sprx-cex-spec-ops-chaos-best
 
 ### Download:  
 
-https://github.com/stayboogy/stayboogyUP-MW3-SpecOps-SPRX-CEX/blob/ea0b303ef80c4af1e534e98ecff98f85e21e75cf/stayboogyUP/Release/stayboogyUP-sprx.v1.24.03.08.zip
+https://github.com/stayboogy/stayboogyUP-MW3-SpecOps-SPRX-CEX/releases/download/perf/stayboogyUP-sprx.v1.24.03.08.zip
 
 
 ## Build it Yourself
