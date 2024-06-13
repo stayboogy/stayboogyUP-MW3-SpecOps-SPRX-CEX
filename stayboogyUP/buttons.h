@@ -1,3 +1,8 @@
+// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
 #include <cell/pad.h>
 
 // use actual hardcoded buttons for the PS3

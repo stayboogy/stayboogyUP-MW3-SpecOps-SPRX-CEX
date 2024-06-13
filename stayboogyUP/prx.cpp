@@ -1,3 +1,8 @@
+// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>

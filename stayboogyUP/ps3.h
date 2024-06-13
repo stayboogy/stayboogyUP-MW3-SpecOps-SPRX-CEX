@@ -1,3 +1,8 @@
+// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
 //ps3.h
 
 #define TOC ( 0x0072DCE8 )

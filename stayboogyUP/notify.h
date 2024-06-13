@@ -1,3 +1,8 @@
+// Copyright (c) 2022, stayboogy@github.com, stayboogy@mail.com, M.C.
+//
+// stayboogy did it!
+//
+
 #include <sys/return_code.h>
 #include <sysutil/sysutil_oskdialog.h>
 #include <sysutil/sysutil_msgdialog.h>
